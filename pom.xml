@@ -18,14 +18,21 @@
             <version>${spigot.api.version}</version>
             <scope>provided</scope>
         </dependency>
-        <!-- Vault API (provided by server) -->
+        <!-- Vault API (provided by server) - resolved via JitPack -->
         <dependency>
-            <groupId>net.milkbowl.vault</groupId>
-            <artifactId>Vault</artifactId>
-            <version>1.7</version>
+            <groupId>com.github.MilkBowl</groupId>
+            <artifactId>VaultAPI</artifactId>
+            <version>1.7.1</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>
