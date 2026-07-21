@@ -1,0 +1,9 @@
+name: TvbSmpRankup
+main: tvbclub.tvbsmp.TvbSmpPlugin
+version: 1.0
+api-version: 1.16
+depend: [Vault]
+commands:
+  rankup:
+    description: Attempt to rank up
+    usage: /rankup

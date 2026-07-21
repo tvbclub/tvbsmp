@@ -1,0 +1,18 @@
+ranks:
+  default:
+    next: vip
+    requirements:
+      time: 86400
+      money: 1000.0
+      mined:
+        STONE: 100
+        DIAMOND_ORE: 1
+    promote-command: "lp user %player% parent set vip"
+  vip:
+    next: elite
+    requirements:
+      time: 604800
+      money: 5000.0
+      mined:
+        DIAMOND_ORE: 5
+    promote-command: "lp user %player% parent set elite"

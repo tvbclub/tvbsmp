@@ -1,0 +1,5 @@
+messages:
+  no-permission: "&cYou don't have permission."
+  only-player: "&cOnly players can run this command."
+  rankup-success: "&aYou ranked up to %rank%!"
+  rankup-failed: "&cRankup failed: %reason%"
