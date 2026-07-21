@@ -2,6 +2,7 @@ package com.example.rankup;
 
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
@@ -26,9 +27,7 @@ public class RankManager {
         if (cfg == null) return;
         if (!cfg.isConfigurationSection("ranks")) return;
         for (String key : cfg.getConfigurationSection("ranks").getKeys(false)) {
-            FileConfiguration rs = cfg.getConfigurationSection("ranks");
-            // careful: getConfigurationSection returns nested; use existing API
-            Object node = cfg.getConfigurationSection("ranks").get(key);
+            ConfigurationSection rs = cfg.getConfigurationSection("ranks");
             // We'll read specific subkeys
             String next = cfg.getString("ranks." + key + ".next", "");
             Map<String,Object> map = new HashMap<>();
